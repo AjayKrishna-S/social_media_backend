@@ -8,6 +8,7 @@ import authRoutes from './routes/auth.js';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import multer from "multer";
+const port = process.env.PORT || 4000;
 
 const app = express();
 app.use((req,res,next)=>{
@@ -45,6 +46,6 @@ app.use('/api/likes',likeRoutes);
 app.use('/api/reletionships',reletionshipRoutes)
 app.use('/api/auth',authRoutes);
 
-app.listen(8800,()=>{
+app.listen(port,()=>{
     console.log("API Working");
 })
