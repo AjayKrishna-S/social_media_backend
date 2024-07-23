@@ -19,7 +19,7 @@ app.use((req,res,next)=>{
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin:"https://669f5683c56413d28b48a358--socialmeetup.netlify.app",
+    origin:"https://main--socialmeetup.netlify.app/",
     credentials: true
 }))
 
